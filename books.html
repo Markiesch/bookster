@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png" />
+    <title>Bookster - Home</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/components/header.css" />
+    <link rel="stylesheet" href="styles/components/footer.css" />
+    <link rel="stylesheet" href="styles/components/book-card.css" />
+    <link rel="stylesheet" href="styles/pages/books.css" />
+  </head>
+  <body>
+    <header>
+      <a href="/index.html" class="logo">
+        <svg width="40" height="40" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="54" cy="54" r="54" fill="#F36C33" />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M71.6135 25.9022C67.2386 23.7212 62.1159 23.6187 57.6573 25.6228L30.8215 37.6857C29.0263 38.4927 27.8715 40.2778 27.8715 42.2461V45.4274C27.8715 47.3234 28.9438 49.0563 30.6406 49.9022L52.3336 60.717C53.7384 61.4173 55.3905 61.4173 56.7953 60.717L78.6783 49.8074C82.5215 47.8915 87.0381 50.6865 87.0381 54.9808V59.0562C87.0381 61.2482 85.7983 63.2516 83.8366 64.2296L57.1436 77.5371C55.5195 78.3468 53.6094 78.3468 51.9853 77.5371L31.1905 67.1701C29.6647 66.4094 27.8715 67.5191 27.8715 69.224C27.8715 70.0943 28.3637 70.8897 29.1425 71.278L52.3604 82.853C53.7556 83.5485 55.3954 83.5535 56.7948 82.8665L75.0159 73.9206C76.4488 73.2171 78.1807 73.8084 78.8842 75.2413C79.5877 76.6742 78.9964 78.4061 77.5635 79.1096L57.1219 89.1457C55.504 89.94 53.6082 89.9342 51.9951 89.1301L25.2923 75.8177C23.3306 74.8397 22.0908 72.8363 22.0908 70.6443V65.5154C22.0908 61.2212 26.6074 58.4261 30.4506 60.342L52.3336 71.2516C53.7384 71.9519 55.3905 71.9519 56.7953 71.2516L80.2475 59.5597C80.8663 59.2512 81.2575 58.6192 81.2575 57.9277C81.2575 56.573 79.8326 55.6912 78.6202 56.2956L57.1436 67.0025C55.5195 67.8122 53.6094 67.8122 51.9853 67.0025L25.2923 53.695C23.3306 52.717 22.0908 50.7136 22.0908 48.5216V39.0117C22.0908 36.7361 23.4259 34.6722 25.5015 33.7393L55.2873 20.3504C61.3271 17.6355 68.2664 17.7744 74.1926 20.7289C85.0035 26.1185 84.7781 41.6208 73.8151 46.6939L57.0511 54.4513C55.4436 55.1952 53.5838 55.161 52.0047 54.3585L36.1522 46.3029C34.7291 45.5797 34.1617 43.8399 34.8849 42.4168C35.608 40.9937 37.3479 40.4263 38.771 41.1495L52.4605 48.106C53.8263 48.8 55.435 48.8296 56.8254 48.1862L71.3874 41.4477C77.9511 38.4104 78.086 29.1291 71.6135 25.9022Z"
+            fill="white"
+          />
+        </svg>
+        Bookster
+      </a>
+
+      <input class="side-menu" type="checkbox" id="side-menu" />
+      <label class="hamburger-trigger" for="side-menu">
+        <span class="hamburger-icon"></span>
+      </label>
+
+      <nav>
+        <ul class="menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./books.html">Books</a></li>
+          <li class="subnav">
+            <p class="subnavbtn">
+              Articles
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+              </svg>
+            </p>
+            <ul class="subnav-content">
+              <li><a href="#">Awards 2022</a></li>
+              <li><a href="#">New website!</a></li>
+              <li class="subnav">
+                <p class="subnavbtn">
+                  Featured books
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                    <path
+                      d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                    />
+                  </svg>
+                </p>
+                <div class="subnav-content">
+                  <a href="#">Book 1</a>
+                  <a href="#">Book 2</a>
+                  <a href="#">Book 3</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li><a class="contact--link" href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="book-list--section">
+        <h1>Books</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eaque cumque in ducimus, commodi, odio necessitatibus vel corporis, beatae sunt aliquam laborum debitis sint veniam at.
+          Consequuntur dolorem perferendis minima?
+        </p>
+        <div class="book--container">
+          <article class="book--card">
+            <div class="book--card__img">
+              <img src="./assets/book1.jpg" alt="" />
+              <p class="book--discount">50</p>
+            </div>
+            <div class="book--card__info">
+              <h3 class="book--title">The one we left behind</h3>
+              <hr />
+              <p class="book--author">Sara Coven</p>
+            </div>
+          </article>
+          <article class="book--card">
+            <div class="book--card__img">
+              <img src="./assets/book2.jpg" alt="" />
+              <p class="book--discount">50</p>
+            </div>
+            <div class="book--card__info">
+              <h3 class="book--title">The one we left behind</h3>
+              <hr />
+              <p class="book--author">Sara Coven</p>
+            </div>
+          </article>
+          <article class="book--card">
+            <div class="book--card__img">
+              <img src="./assets/book3.jpg" alt="" />
+              <p class="book--discount">50</p>
+            </div>
+            <div class="book--card__info">
+              <h3 class="book--title">The one we left behind</h3>
+              <hr />
+              <p class="book--author">Sara Coven</p>
+            </div>
+          </article>
+          <article class="book--card">
+            <div class="book--card__img">
+              <img src="./assets/book4.jpg" alt="" />
+              <p class="book--discount">50</p>
+            </div>
+            <div class="book--card__info">
+              <h3 class="book--title">The one we left behind</h3>
+              <hr />
+              <p class="book--author">Sara Coven</p>
+            </div>
+          </article>
+          <article class="book--card">
+            <div class="book--card__img">
+              <img src="./assets/book5.jpg" alt="" />
+              <p class="book--discount">50</p>
+            </div>
+            <div class="book--card__info">
+              <h3 class="book--title">The one we left behind</h3>
+              <hr />
+              <p class="book--author">Sara Coven</p>
+            </div>
+          </article>
+          <article class="book--card">
+            <div class="book--card__img">
+              <img src="./assets/book6.jpeg" alt="" />
+              <p class="book--discount">50</p>
+            </div>
+            <div class="book--card__info">
+              <h3 class="book--title">The one we left behind</h3>
+              <hr />
+              <p class="book--author">Sara Coven</p>
+            </div>
+          </article>
+          <article class="book--card">
+            <div class="book--card__img">
+              <img src="./assets/book7.jpg" alt="" />
+              <p class="book--discount">50</p>
+            </div>
+            <div class="book--card__info">
+              <h3 class="book--title">The one we left behind</h3>
+              <hr />
+              <p class="book--author">Sara Coven</p>
+            </div>
+          </article>
+          <article class="book--card">
+            <div class="book--card__img">
+              <img src="./assets/book8.jpg" alt="" />
+              <p class="book--discount">50</p>
+            </div>
+            <div class="book--card__info">
+              <h3 class="book--title">The one we left behind</h3>
+              <hr />
+              <p class="book--author">Sara Coven</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-link--container">
+        <div>
+          <h2>Sitemap</h2>
+          <ul>
+            <li>
+              <a href="./index.html">Home</a>
+              <a href="./books.html">Books</a>
+              <a href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2>Articles</h2>
+          <ul>
+            <li>
+              <a href="#">Awards 2022</a>
+              <a href="#">New website!</a>
+              <a href="#">Featured books</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-socials--container">
+          <h2>Socials</h2>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com" target="_blank">Facebook</a>
+              <a href="https://www.instagram.com" target="_blank">Instagram</a>
+              <a href="https://www.x.com" target="_blank">Twitter/X</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p>&copy; Bookster 2018 - 2023</p>
+    </footer>
+  </body>
+</html>

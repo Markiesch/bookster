@@ -1,0 +1,27 @@
+.book-list--section {
+  max-width: var(--max-container-width);
+  padding: 2rem var(--container-padding-x);
+  margin: 0 auto;
+}
+
+.book-list--section > p {
+  padding-bottom: 2rem;
+  max-width: 120ch;
+}
+
+.book--container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 480px) {
+  .book--container {
+    grid-template-columns: 1fr;
+  }
+}
