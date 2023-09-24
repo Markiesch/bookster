@@ -1,0 +1,38 @@
+footer {
+  max-width: var(--max-container-width);
+  padding: 2rem var(--container-padding-x);
+  margin: 0 auto;
+}
+
+.footer-link--container {
+  display: flex;
+  gap: 6rem;
+  padding-bottom: 2rem;
+}
+
+footer h2 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.footer-link--container a {
+  display: block;
+  text-decoration: underline;
+}
+
+.footer-socials--container {
+  margin-left: auto;
+  text-align: right;
+}
+
+@media screen and (max-width: 480px) {
+  .footer-link--container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-socials--container {
+    margin-left: 0;
+    text-align: left;
+  }
+}

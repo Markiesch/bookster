@@ -1,3 +1,10 @@
+:root {
+  --max-container-width: 90rem;
+  --container-padding-x: 2rem;
+
+  --primary-color: #00a96c;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -29,4 +36,21 @@ a {
 img {
   display: block;
   max-width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  :root {
+    --container-padding-x: 1rem;
+  }
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+header,
+footer {
+  width: 100%;
 }
