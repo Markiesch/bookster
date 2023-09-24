@@ -1,0 +1,76 @@
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+main {
+  max-width: var(--max-container-width);
+  padding: 3rem var(--container-padding-x);
+  margin: 0 auto;
+}
+
+.contact--section {
+  height: 100%;
+  gap: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+}
+
+.contact--section .contact--link {
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  align-items: center;
+  padding: 0.25rem 0;
+}
+
+.contact--section p {
+  padding-bottom: 1rem;
+}
+
+label,
+input,
+textarea {
+  display: block;
+}
+
+label {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  outline: none;
+  width: 100%;
+  max-width: min(100%, 25rem);
+}
+
+input {
+  margin-bottom: 1rem;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--primary-color);
+}
+
+textarea {
+  min-height: 5rem;
+  max-height: 15rem;
+  resize: vertical;
+}
+
+form button {
+  margin-top: 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 0.25rem;
+  padding: 0.5em 1em;
+  font-size: 1.125rem;
+}
