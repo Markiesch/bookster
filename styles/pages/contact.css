@@ -1,12 +1,12 @@
-h1 {
-  font-size: 2rem;
-  font-weight: 700;
-}
+/* 
+  1. Page styles
+  2. Information section
+  3. Form section
+*/
 
+/* 1. Page styles */
 main {
-  max-width: var(--max-container-width);
-  padding: 3rem var(--container-padding-x);
-  margin: 0 auto;
+  padding-block: 3rem;
 }
 
 .contact--section {
@@ -15,6 +15,19 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  .contact--section {
+    gap: 3rem;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 2. Information section */
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .contact--section .contact--link {
@@ -27,6 +40,8 @@ main {
 .contact--section p {
   padding-bottom: 1rem;
 }
+
+/* 2. Form section */
 
 label,
 input,
@@ -65,12 +80,12 @@ textarea {
 }
 
 form button {
-  margin-top: 1rem;
-  cursor: pointer;
   border: none;
-  background-color: var(--primary-color);
-  color: white;
   border-radius: 0.25rem;
+  margin-top: 1rem;
   padding: 0.5em 1em;
   font-size: 1.125rem;
+  color: white;
+  background-color: var(--primary-color);
+  cursor: pointer;
 }
