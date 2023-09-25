@@ -1,7 +1,5 @@
 footer {
-  max-width: var(--max-container-width);
-  padding: 2rem var(--container-padding-x);
-  margin: 0 auto;
+  padding-block: 2rem;
 }
 
 .footer-link--container {
@@ -25,14 +23,16 @@ footer h2 {
   text-align: right;
 }
 
+@media screen and (max-width: 800px) {
+  .footer-socials--container {
+    margin-left: 0;
+    text-align: left;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .footer-link--container {
     flex-direction: column;
     gap: 2rem;
-  }
-
-  .footer-socials--container {
-    margin-left: 0;
-    text-align: left;
   }
 }
