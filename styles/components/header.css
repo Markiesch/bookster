@@ -1,12 +1,23 @@
+/* 
+  1. Global header styles
+  2. Button/links styles
+  3. Hamburger menu
+  4. Mobile styles
+*/
+
+/* 1. Global header styles */
 header {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem var(--container-padding-x);
-  max-width: var(--max-container-width);
-  margin: 0 auto;
+  padding-block: 0.5rem;
   z-index: 99;
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
 }
 
 .logo {
@@ -17,11 +28,7 @@ header {
   font-size: 1.25rem;
 }
 
-.menu {
-  display: flex;
-  gap: 1rem;
-}
-
+/* 2. Button/links styles */
 .menu a,
 .subnavbtn {
   padding: 0.5rem 1rem;
@@ -44,6 +51,7 @@ header .contact--link {
   opacity: 0.8;
 }
 
+/* 2.1 Subnav button */
 .subnavbtn {
   display: flex;
   align-items: center;
@@ -87,7 +95,7 @@ header .contact--link {
   display: block;
 }
 
-/* Hamburger menu */
+/* 3. Hamburger menu */
 .hamburger-trigger {
   height: 100%;
   padding: 1rem;
@@ -130,6 +138,8 @@ header .contact--link {
 .side-menu {
   display: none;
 }
+
+/* 4. Mobile styles */
 
 @media screen and (max-width: 650px) {
   .hamburger-trigger {
