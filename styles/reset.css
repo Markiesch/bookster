@@ -1,16 +1,26 @@
-:root {
-  --max-container-width: 90rem;
-  --container-padding-x: 2rem;
+/* 
+  1. Global reset
+  2. Variables
+  3. Utility classes
+*/
 
-  --primary-color: #00a96c;
-}
-
+/* 1. Global reset */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-
   font-family: "Poppins", Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+header,
+footer {
+  width: 100%;
 }
 
 h1,
@@ -38,19 +48,26 @@ img {
   max-width: 100%;
 }
 
+/* 2. Variables */
+:root {
+  --max-container-width: 90rem;
+  --container-padding-x: 2rem;
+
+  --primary-color: #00a96c;
+}
+
+/* Variables mobile override */
 @media screen and (max-width: 480px) {
   :root {
     --container-padding-x: 1rem;
   }
 }
 
-body {
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-}
-
-header,
-footer {
-  width: 100%;
+/* 3. Utility classes */
+.container,
+footer,
+header {
+  max-width: var(--max-container-width);
+  padding-inline: var(--container-padding-x);
+  margin: 0 auto;
 }
